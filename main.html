@@ -7,7 +7,11 @@
 		<title> WAR CO. </title>
 
 		<style> 
-		
+			
+			body {
+				margin-bottom: 5em;
+			}
+			
 			.tpage {
 				display: flex;
 				background-color: #7a7a52;
@@ -103,6 +107,39 @@
 				text-align: center;
 			}
 			
+			.fcontainer {
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				grid-template-rows: 1;
+				background-color: #ebebe0;
+			}
+			
+			.helpinfo {
+				grid-column: 1;
+				grid-row: 1;
+				margin-left: 50px;
+			}
+			
+			.explore {
+				grid-column: 2;
+				grid-row: 1;
+			}
+			
+			.joinus {
+				grid-column: 3;
+				grid-row: 1;
+			}
+			
+			.socials {
+				grid-column: 4;
+				grid-row: 1;
+			}
+			
+			.socials img {
+				height: 40px;
+				width: 40px;
+			}
+			
 		</style>
 		
 	</head>
@@ -146,7 +183,51 @@
 	<body>
 
 
-
+	
+	
+	
+	
+	
+		<footer>
+		
+			<div class = "fcontainer">
+				
+				<div class = "helpinfo">
+					<p> <strong> Help </strong> <br>
+					<a href = "https://www.google.ca/"> Returns/Exchanges </a> <br>
+					Privacy Policy </p>					
+				</div>
+				
+				<div class = "explore">
+					<p> <strong> Explore </strong> <br>
+					Customer Reviews <br>
+					<a href = "https://mail.google.com/mail"> Account </a> </p>
+				</div>
+				
+				<div class = "joinus">
+					<p> <strong> Join Us </strong> <br>
+					Stay updated with all new releases, events and info from WarCo! 
+					
+					<form>
+						<label for = "emailadd"> Email Address </label> <br>
+						<input type = "text" name = "emailaddress" id = "emailadd" class = "textbox" placeholder = "name@example.com" maxlength = "40">
+						
+						<input type = "submit" value = "SUBMIT" class = "textbox">
+					</form>
+					
+				</div>
+				
+				<div class = "socials">
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/instagram.png"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/facebook.png"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/whatsapp.png"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/twitter.png"> </a>
+				</div>
+				
+			</div>
+		
+		</footer>
+		
 	</body>
 
 
