@@ -114,6 +114,16 @@
 				background-color: #ebebe0;
 			}
 			
+			.fcontainer a {
+				text-decoration: none;
+				color: black;
+			}
+			
+			.fcontainer a:hover {
+				text-decoration: underline;
+				color: blue;
+			}
+			
 			.helpinfo {
 				grid-column: 1;
 				grid-row: 1;
@@ -131,6 +141,11 @@
 			}
 			
 			.socials {
+				display: flex;
+				justify-content: end;
+				margin-top: 35px;
+				margin-bottom: 30px;
+				grid-gap: 10px;
 				grid-column: 4;
 				grid-row: 1;
 			}
@@ -208,7 +223,7 @@
 					<p> <strong> Join Us </strong> <br>
 					Stay updated with all new releases, events and info from WarCo! 
 					
-					<form>
+					<form method = "post" action = "mailto:aryanrodriguesps@gmail.com">
 						<label for = "emailadd"> Email Address </label> <br>
 						<input type = "text" name = "emailaddress" id = "emailadd" class = "textbox" placeholder = "name@example.com" maxlength = "40">
 						
@@ -218,10 +233,10 @@
 				</div>
 				
 				<div class = "socials">
-					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/instagram.png"> </a>
-					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/facebook.png"> </a>
-					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/whatsapp.png"> </a>
-					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/twitter.png"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/instagram.png" alt = "instagram icon"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/facebook.png" alt = "facebook icon"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/whatsapp.png" alt = "whatsapp icon"> </a>
+					<a href = "https://www.instagram.com/aryanzitoo_/"> <img src = "images/twitter.png" alt = "twitter icon"> </a>
 				</div>
 				
 			</div>

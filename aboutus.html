@@ -16,12 +16,13 @@
 			h1 {
 				text-align: center;
 				font-family: "HelveticaNeue-CondensedBold";
-				background-color: #7a7a52;
 				width: 100%;
 			}
 			
 			body {
 				font-family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold";
+				background-color: #36454F;
+				color: white;
 			}
 			
 			.abtwarco {
@@ -31,9 +32,9 @@
 			
 			nav {
 				display: flex;
-				background-color: #8a8a5c;
 				justify-content: center;
 				align-items: center;
+				background-color: #8F8C8C;
 			}
 			
 			nav ul {
@@ -47,15 +48,54 @@
 			
 			nav a {
 				text-decoration: none;
-				color: black;
+				color: white;
 			}
 			
 			nav a:hover {
-				
+				text-decoration: underline;
+				color: blue;
+			}
+			
+			.maincontainer {
+				display: flex;
+			}
+			
+			.container1 {
+				justify-content: flex-start;
+				margin-top: 50px;
+				margin-left: 50px;
+				margin-right: 50px;
 			}
 			
 			.pinfo {
 				text-align: center;
+			}
+			
+			.container2 {
+				margin-right: 50px;
+				margin-top: 50px;
+			}
+			
+			.container2 img {
+				width: 400px;
+				height: 200px;
+			}
+			
+			footer {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: 1;
+			}
+			
+			.haveissues {
+				grid-column: 1;
+				grid-row: 1;
+			}
+			
+			.textbox {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
 			}
 		
 		</style>
@@ -79,15 +119,38 @@
 		
 		<!-- Description Paragraph -->
 
+		<div class = "maincontainer">
+			<div class = "container1">	
+				<p class = "pinfo"> 
 
+					War Clothing Company, founded by Aryan Rodrigues, started as a business idea behind a 16 year-old's computer and his ideas. <br>
+					The touch of modern designing, brightful and inspiring appeal <br>
+					that can connect with the world we live in today. <br>
+					War Co. wants to bring clothing that can have a modern, meaningful and can uphold faith to a world living at war with not only each other, but ourselves. 
+				</p>
 			
-		<p class = "pinfo"> 
-
-			War Clothing Company, founded by Aryan Rodrigues, started as a business idea behind a 16 year-old's computer and his ideas. <br>
-			The touch of modern designing, brightful and inspiring appeal <br>
-			that can connect with the world we live in today. <br>
-			War Co. wants to bring clothing that can have a modern, meaningful and can uphold faith to a world living at war with not only each other, but ourselves. </p>
-	
+			</div>
+			
+			<div class = "container2">
+				<img src = "images/test.png" alt = "img">
+			</div>
+		</div>
+		
+		<footer>
+			<div class = "haveissues">
+				
+				<form method = "post" action = "mailto:aryanrodriguesps@gmail.com">
+					<fieldset>
+						<label for = "comments"> Issues/Concerns Regarding us? Comment down below </label>
+		               	<textarea cols = "40" rows = "7" name = "feedback"> </textarea>
+						<br>
+		                   <input type = "submit" value = "SUBMIT" class = "textbox">
+					</fieldset>
+				</form>
+				
+			</div>
+		</footer>
+		
 	</body>
 	
 	
